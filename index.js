@@ -20,7 +20,6 @@
 	});
 	let n=0;
 	let t=setInterval(move,3000);
-
 	function move(){
 		n++;
 		if(n===imgs.length){
@@ -42,8 +41,6 @@
 	banners.onmouseleave=function(){
 		t=setInterval(move,3000);
 	};
-
-
 	let flag=true;
 	next.onclick=function(){
 		if(flag){
