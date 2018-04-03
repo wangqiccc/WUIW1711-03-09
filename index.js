@@ -54,7 +54,7 @@
 	prev.onclick=function(){
 		if(flag){
 			flag=false;
-			n-=2
+			n-=2;
 			move();
 		}
 	};
@@ -220,17 +220,20 @@
 }
 //导航
 {
-	var daoh=document.querySelectorAll(".daoh_wenzi span");
+	var daoh=document.querySelectorAll(".daoh_wenzi2");
 	var daohlist=document.querySelectorAll(".daoh_xiaoguo");
 	let obj=daohlist[0];
 	daoh.forEach(function(ele,index){
 		ele.onmouseenter=function(){
 			daohlist[index].style.display="block";
+            daohlist[index].style.height="220px";
 			daohlist[index].style.zIndex=200;
 			obj=daohlist[index];
+
 		}
 		ele.onmouseleave=function(){
 			daohlist[index].style.display="none";
+			daohlist[index].style.height="0"
 		}
 	})
 }

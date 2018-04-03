@@ -87,10 +87,6 @@
 
 
 
-
-
-
-
 .daoh{
 	width: 1226px;
 	height: 100px;
@@ -109,7 +105,10 @@
 	float: left;
     margin-left: 189px;
 }
-.daoh_wenzi span{
+.daoh_wenzi1{
+	float: left;
+}
+.daoh_wenzi2{
 	line-height: 100px;
 	color: #333;
 	font-size: 15px;
@@ -118,15 +117,54 @@
 	padding-right: 10px;
 	cursor: pointer;
 }
+.daoh_wenzi2:hover {
+	color: #ff6700;
+}
 .daoh_xiaoguo{
 	width: 100%;
-	height: 200px;
-	background-color: blue;
+	/*height: 220px;*/
+	height: 0;
+	background-color: #fff;
 	position: absolute;
-	top:100;
+	top:140px;
 	left: 0;
 	display: none;
 	font-size: 30px;
+	transition:height 5s;
+	border: 1px solid #eee;
+}
+.daoh_content{
+	width: 1226px;
+	height: 220px;
+	margin: 0 auto;
+	float: left;
+}
+.daoh_item1{
+	width: 240px;
+	height: 220px;
+	float: left;
+}
+.daoh_tu{
+	margin-top: 20px;
+	margin-left: 50px;
+	width: 190px;
+	height: 140px;
+	border-right: 1px solid #eee;
+}
+.daoh_tu1{
+	width: 140px;
+	height: 140px;
+	display: block;
+}
+.daoh_item1_wenzi{
+	width: 240px;
+	font-size: 14px;
+}
+.class_item_wenzi2{
+	width: 240px;
+	font-size: 14px;
+	color:  #ff6700;
+	margin-top: 2px;
 }
 .search{
 	width: 296px;
@@ -150,7 +188,7 @@
 	color: #333;
 	float: left;
 	font-size: 21px;
-	font-weight: 400px;
+	font-weight: 400;
 	line-height: 58px;
 }
 .mingxing_btn{
@@ -754,7 +792,7 @@
 	height: 25px;
 	background-color: #423d39;
 	float: left;
-	margin: 27px 0px 27px;
+	margin: 27px 0 27px;
 	display: block;
 }
 .zhandian_middle{
@@ -778,7 +816,7 @@
 }
 .zhandian_m span{
 	font-size: 16px;
-	color: ##424242;
+	color: #424242;
 	margin-bottom: 32px;
 
 }
@@ -1275,7 +1313,7 @@
 	float: right;
 }
 .banner_left{
-	width: 800px;
+	width: 750px;
 	height: 459px;
 	background-color: #fff;
 	position: absolute;
@@ -1283,8 +1321,27 @@
 	left: 234px;
 	border-top: 1px solid #ccc;
 	display: none;
-	font-size: 30px;
-	color:red;
+}
+.banner_left_xiaohuo{
+	width: 250px;
+	height: 76px;
+	float: left;
+}
+.banner_left_zi{
+	font-size: 14px;
+	text-align: center;
+	line-height: 76px;
+	float: left;
+	margin-left: 10px;
+	color: #000;
+}
+.banner_left_tu1{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-top: 13px;
+	float: left;
+	margin-left: 5px;
 }
 .banner_nav li:hover{
 	background-color:#ff6700;
@@ -1300,10 +1357,7 @@
 .top_car:hover span{
 	color: #ff6700;
 }
-.daoh_wenzi span:hover {
-	color: #ff6700;
 
-}
 
 .cuxiao_item:hover span{
 	color: #ffffff;
